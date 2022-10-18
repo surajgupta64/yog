@@ -11,6 +11,8 @@ let Users = new mongoose.Schema({
     },
     password: String,
     dashboardAccess: String,
+    center: String,
+    centerCode: String,
     status: Boolean,
 }, { timestamps: true })
 
