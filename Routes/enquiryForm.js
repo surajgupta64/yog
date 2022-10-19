@@ -12,6 +12,15 @@ router.get('/all', async function (req, res) {
     }
 })
 
+router.get('/:id', async function (req, res) {
+    try {
+        const response = await enquiryForm.findById({ _id: req.params.id })
+        return res.status(200).json(response);
+    } catch (err) {
+        return res.status(500).json({ error: err })
+    }
+})
+
 router.post('/create', async (req, res) => {
     try {
         const temp = await new enquiryForm(req.body)
