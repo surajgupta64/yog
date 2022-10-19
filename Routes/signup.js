@@ -21,6 +21,8 @@ router.post('/create', async (req, res) => {
             email,
             password,
             dashboardAccess,
+            center,
+            centerCode,
         } = req.body;
         //Checking if User Already Exists
         let found = await User.findOne({ email });
@@ -36,6 +38,8 @@ router.post('/create', async (req, res) => {
             email,
             password,
             dashboardAccess,
+            center,
+            centerCode,
         });
         const response = await temp.save();
         return res.status(200).json(response);
@@ -52,6 +56,8 @@ router.post('/update/:id', userValidate, async (req, res) => {
             email,
             password,
             dashboardAccess,
+            center,
+            centerCode,
         } = req.body;
         let salt = await bcrypt.genSalt(5);
         const hashed = await bcrypt.hash(password, salt);
@@ -62,6 +68,8 @@ router.post('/update/:id', userValidate, async (req, res) => {
             email,
             password,
             dashboardAccess,
+            center,
+            centerCode,
         });
         return res.status(200).json(response)
     } catch (err) {
