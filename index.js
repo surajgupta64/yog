@@ -38,6 +38,7 @@ app.use('/employeeForm', userValidate, require('./Routes/employeeForm'));
 app.use('/Batch', userValidate, require('./Routes/Batch'));
 app.use('/Companyprofile', userValidate, require('./Routes/Companyprofile'));
 app.use('/Package', userValidate, require('./Routes/Package'));
+app.use('/offer', userValidate, require('./Routes/offer'));
 app.use('/brandlogoupdate', userValidate, require('./Routes/brandlogoupdate'));
 app.use('/service', userValidate, require('./Routes/service'));
 app.use('/staffAttendance', userValidate, require('./Routes/staffAttentance'));
