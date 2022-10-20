@@ -4,6 +4,7 @@ let prospect = new mongoose.Schema({
     CallDate: Date,
     Time: String,
     Name: String,
+    Email: String,
     Contact: Number,
     ServiceName: String,
     CallStatus: String,
