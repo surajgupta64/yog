@@ -41,6 +41,8 @@ app.use('/Package', userValidate, require('./Routes/Package'));
 app.use('/brandlogoupdate', userValidate, require('./Routes/brandlogoupdate'));
 app.use('/service', userValidate, require('./Routes/service'));
 app.use('/staffAttendance', userValidate, require('./Routes/staffAttentance'));
+app.use('/clientAttendance', userValidate, require('./Routes/clientAttendance'));
+app.use('/prospect', userValidate, require('./Routes/prospect'));
 app.use('/subservice', userValidate, require('./Routes/subservice'));
 app.use('/memberForm', userValidate, require('./Routes/memberForm'));
 app.use('/designation', userValidate, require('./Routes/designation'));
