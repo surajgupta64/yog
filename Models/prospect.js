@@ -14,6 +14,7 @@ let prospect = new mongoose.Schema({
     TimeFollowp: String,
     Discussion: String,
     Counseller: String,
+    status: String,
 }, { timestamps: true })
 
 module.exports = mongoose.model('prospect', prospect);
