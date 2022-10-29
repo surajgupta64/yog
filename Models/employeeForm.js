@@ -34,6 +34,8 @@ let employeeForms = new mongoose.Schema({
     AadharNumber: Number,
     PANCard: String,
     AadharCard: String,
+    Comment: String,
+    selected: String,
     status: Boolean,
 }, { timestamps: true })
 

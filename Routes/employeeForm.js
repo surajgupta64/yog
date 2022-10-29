@@ -43,7 +43,7 @@ router.get('/:id', async function (req, res) {
 
 router.get('/attendance/:AttendanceID', async function (req, res) {
     try {
-        const response = await memberForm.findById({ AttendanceID: req.params.AttendanceID })
+        const response = await employeeForm.findById({ AttendanceID: req.params.AttendanceID })
         return res.status(200).json(response);
     } catch (err) {
         return res.status(500).json({ error: err })

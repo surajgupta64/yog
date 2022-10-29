@@ -58,6 +58,7 @@ let memberFroms = new mongoose.Schema({
     idealWeight: String,
     suggestion: String,
     comments: String,
+    plan: Boolean,
     status: String,
 }, { timestamps: true })
 
