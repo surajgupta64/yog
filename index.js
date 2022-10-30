@@ -47,6 +47,14 @@ app.use('/prospect', userValidate, require('./Routes/prospect'));
 app.use('/subservice', userValidate, require('./Routes/subservice'));
 app.use('/memberForm', userValidate, require('./Routes/memberForm'));
 app.use('/designation', userValidate, require('./Routes/designation'));
+app.use('/impCallList', userValidate, require('./Routes/impCallList'));
+app.use('/suppilerCallList', userValidate, require('./Routes/suppilerCallList'));
+app.use('/stockListing', userValidate, require('./Routes/stockListing'));
+app.use('/fitnessProduct', userValidate, require('./Routes/fitnessProduct'));
+app.use('/ayurdevaMedicine', userValidate, require('./Routes/ayurdevaMedicine'));
+app.use('/foodProduct', userValidate, require('./Routes/foodProduct'));
+app.use('/guestCallList', userValidate, require('./Routes/guestCallList'));
+app.use('/emailsms', userValidate, require('./Routes/emailSender'));
 
 app.listen(port, function () {
     console.log('listening on port', port);
