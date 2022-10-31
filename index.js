@@ -54,6 +54,7 @@ app.use('/fitnessProduct', userValidate, require('./Routes/fitnessProduct'));
 app.use('/ayurdevaMedicine', userValidate, require('./Routes/ayurdevaMedicine'));
 app.use('/foodProduct', userValidate, require('./Routes/foodProduct'));
 app.use('/guestCallList', userValidate, require('./Routes/guestCallList'));
+app.use('/invoice', userValidate, require('./Routes/Invoice'));
 app.use('/emailsms', userValidate, require('./Routes/emailSender'));
 
 app.listen(port, function () {
