@@ -3,7 +3,7 @@ let mongoose = require('mongoose')
 let stockListing = new mongoose.Schema({
     username: String,
     productCode: {
-        type: Number,
+        type: String,
         unique: true,
     },
     productName: String,
