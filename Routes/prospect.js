@@ -44,9 +44,9 @@ router.get('/:id', async function (req, res) {
 })
 
 
-router.get('/EnquiryID/:EnquiryID', async function (req, res) {
+router.get('/EnquiryID/:ids', async function (req, res) {
     try {
-        const response = await prospect.findById({ EnquiryID: req.params.EnquiryID })
+        const response = await prospect.findById({ EnquiryID: req.params.ids })
         return res.status(200).json(response);
     } catch (err) {
         return res.status(500).json({ error: err })
