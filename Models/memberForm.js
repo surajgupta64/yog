@@ -19,7 +19,7 @@ let memberFroms = new mongoose.Schema({
     state: String,
     BloodGroup: String,
     FacebookID: String,
-    invoice: String,
+    invoiceId: String,
     sms: Boolean,
     mail: Boolean,
     pushnotification: Boolean,
