@@ -3,7 +3,6 @@ let mongoose = require('mongoose')
 let Invoice = new mongoose.Schema({
     username: String,
     date: Date,
-    InvoiceNo: String,
     centerName: String,
     MemberId: String,
     MemberName: String,
