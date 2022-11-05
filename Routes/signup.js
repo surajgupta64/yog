@@ -49,7 +49,7 @@ router.post('/create', async (req, res) => {
     }
 });
 
-router.post('/update/:id', userValidate, async (req, res) => {
+router.post('/update/:email', async (req, res) => {
     try {
         let {
             username,
@@ -63,7 +63,7 @@ router.post('/update/:id', userValidate, async (req, res) => {
         const hashed = await bcrypt.hash(password, salt);
         password = hashed;
         dashboardAccess = dashboardAccess.toLowerCase()
-        const response = await User.findByIdAndUpdate(req.params.id, {
+        const response = await User.findByIdAndUpdate(req.params.email, {
             username,
             email,
             password,
