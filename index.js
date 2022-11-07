@@ -54,6 +54,12 @@ app.use('/fitnessProduct', userValidate, require('./Routes/fitnessProduct'));
 app.use('/ayurdevaMedicine', userValidate, require('./Routes/ayurdevaMedicine'));
 app.use('/foodProduct', userValidate, require('./Routes/foodProduct'));
 app.use('/guestCallList', userValidate, require('./Routes/guestCallList'));
+app.use('/holidaysListMaster', userValidate, require('./Routes/holidayListMaster'));
+app.use('/taxMaster', userValidate, require('./Routes/taxMaster'));
+app.use('/hrPolicyMaster', userValidate, require('./Routes/hrPolicyMaster'));
+app.use('/budgetingMaster', userValidate, require('./Routes/budgetingMaster'));
+app.use('/templateMaster', userValidate, require('./Routes/templateMaster'));
+app.use('/expenseMaster', userValidate, require('./Routes/expenseMaster'));
 app.use('/invoice', userValidate, require('./Routes/Invoice'));
 app.use('/emailsms', userValidate, require('./Routes/emailSender'));
 
