@@ -11,7 +11,7 @@ let offer = new mongoose.Schema({
     endDate: Date,
     discount: Number,
     netfees: Number,
-    status: String,
+    status: Boolean,
 }, { timestamps: true })
 
 module.exports = mongoose.model('offer', offer);

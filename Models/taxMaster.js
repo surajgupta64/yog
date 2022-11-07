@@ -5,7 +5,7 @@ let taxMaster = new mongoose.Schema({
     Date: Date,
     TaxName: String,
     Tax: Number,
-    Status: String,
+    Status: Boolean,
 }, { timestamps: true })
 
 module.exports = mongoose.model('taxMaster', taxMaster);
