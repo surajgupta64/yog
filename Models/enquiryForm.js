@@ -22,6 +22,7 @@ let enquiryForms = new mongoose.Schema({
     ContactNumber2: Number,
     EnquiryDate: Date,
     ServiceName: String,
+    ServiceVariation: String,
     Customertype: String,
     enquirytype: String,
     appointmentDate: Date,
