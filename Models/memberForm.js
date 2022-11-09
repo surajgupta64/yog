@@ -12,6 +12,8 @@ let memberFroms = new mongoose.Schema({
     Gender: String,
     DateofBirth: Date,
     Anniversarydate: Date,
+    startDate: Date,
+    endDate: Date,
     Address: String,
     Area: String,
     city: String,
