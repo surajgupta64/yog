@@ -4,6 +4,7 @@ let mongoose = require('mongoose')
 let offer = new mongoose.Schema({
     username: String,
     ServiceName: String,
+    ServiceVariation: String,
     duration: String,
     fees: Number,
     dealName: String,
