@@ -8,6 +8,7 @@ let Invoice = new mongoose.Schema({
     MemberName: String,
     InvoiceNo: String,
     ServiceName: String,
+    ServiceVariation: String,
     PackageName: String,
     startDate: Date,
     endDate: Date,
