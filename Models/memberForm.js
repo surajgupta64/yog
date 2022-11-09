@@ -30,6 +30,7 @@ let memberFroms = new mongoose.Schema({
     ContactNumber1: Number,
     Relationship: String,
     serviceName: String,
+    serviceVariation: String,
     Customertype: String,
     Leadsource: String,
     EnquiryType: String,
