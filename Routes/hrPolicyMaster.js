@@ -23,14 +23,6 @@ router.post('/create', async (req, res) => {
     }
 });
 
-router.post('/update/:id', async (req, res) => {
-    try {
-        const response = await hrPolicyMaster.findByIdAndUpdate(req.params.id, req.body);
-        return res.status(200).json(response)
-    } catch (err) {
-        return res.status(500).json({ error: err })
-    }
-})
 
 
 router.get('/:id', async function (req, res) {
