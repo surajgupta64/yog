@@ -54,6 +54,7 @@ app.use('/fitnessProduct', userValidate, require('./Routes/fitnessProduct'));
 app.use('/ayurdevaMedicine', userValidate, require('./Routes/ayurdevaMedicine'));
 app.use('/foodProduct', userValidate, require('./Routes/foodProduct'));
 app.use('/guestCallList', userValidate, require('./Routes/guestCallList'));
+app.use('/galleryMaster', userValidate, require('./Routes/galleryMaster'));
 app.use('/holidaysListMaster', userValidate, require('./Routes/holidayListMaster'));
 app.use('/leadSourceMaster', userValidate, require('./Routes/leadSourceMaster'));
 app.use('/taxMaster', userValidate, require('./Routes/taxMaster'));

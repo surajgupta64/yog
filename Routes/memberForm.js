@@ -41,6 +41,24 @@ router.get('/attendance/:AttendanceID', async function (req, res) {
     }
 })
 
+router.get('/name/:Fullname', async function (req, res) {
+    try {
+        const response = await memberForm.findById({ AttendanceID: req.params.AttendanceID })
+        return res.status(200).json(response);
+    } catch (err) {
+        return res.status(500).json({ error: err })
+    }
+})
+
+router.get('/mobile/:ContactNumber', async function (req, res) {
+    try {
+        const response = await memberForm.findById({ AttendanceID: req.params.AttendanceID })
+        return res.status(200).json(response);
+    } catch (err) {
+        return res.status(500).json({ error: err })
+    }
+})
+
 router.post('/update/:id', async (req, res) => {
     try {
         const response = await memberForm.findByIdAndUpdate(req.params.id, req.body);
