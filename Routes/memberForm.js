@@ -43,7 +43,7 @@ router.get('/attendance/:AttendanceID', async function (req, res) {
 
 router.get('/name/:Fullname', async function (req, res) {
     try {
-        const response = await memberForm.findById({ AttendanceID: req.params.AttendanceID })
+        const response = await memberForm.findById({ Fullname: req.params.Fullname })
         return res.status(200).json(response);
     } catch (err) {
         return res.status(500).json({ error: err })
@@ -52,7 +52,7 @@ router.get('/name/:Fullname', async function (req, res) {
 
 router.get('/mobile/:ContactNumber', async function (req, res) {
     try {
-        const response = await memberForm.findById({ AttendanceID: req.params.AttendanceID })
+        const response = await memberForm.findById({ ContactNumber: req.params.ContactNumber })
         return res.status(200).json(response);
     } catch (err) {
         return res.status(500).json({ error: err })
