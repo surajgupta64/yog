@@ -25,6 +25,7 @@ let Invoice = new mongoose.Schema({
     pendingAmount: Number,
     paymode: String,
     writeoff: String,
+    cancelledBy: String,
     status: String,
 }, { timestamps: true })
 
