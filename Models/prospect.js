@@ -14,6 +14,8 @@ let prospect = new mongoose.Schema({
     TimeFollowp: String,
     Discussion: String,
     Counseller: String,
+    enquiryStage: String,
+    typeOfCall: String,
     status: String,
 }, { timestamps: true })
 

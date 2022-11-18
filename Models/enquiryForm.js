@@ -28,6 +28,8 @@ let enquiryForms = new mongoose.Schema({
     appointmentDate: Date,
     appointmentTime: String,
     appointmentfor: String,
+    trialDate: Date,
+    trialTime: String,
     Counseller: String,
     status: String
 }, { timestamps: true })
