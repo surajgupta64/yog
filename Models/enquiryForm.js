@@ -18,7 +18,7 @@ let enquiryForms = new mongoose.Schema({
     Message: String,
     person_Name: String,
     Relation: String,
-    CountryCode12: Number,
+    CountryCode2: Number,
     ContactNumber2: Number,
     EnquiryDate: Date,
     ServiceName: String,
