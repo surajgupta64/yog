@@ -2,6 +2,7 @@ let mongoose = require('mongoose')
 
 let enquiryForms = new mongoose.Schema({
     username: String,
+    EnquiryId: String,
     Fullname: String,
     Emailaddress: String,
     CountryCode: Number,
