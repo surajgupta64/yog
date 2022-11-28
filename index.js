@@ -25,6 +25,11 @@ app.use('/signup', require('./Routes/signup'));
 
 // Proctected
 app.use('/login', require('./Routes/login'));
+
+app.use('/Referral', userValidate, require('./Routes/Referral'));
+app.use('/Document', userValidate, require('./Routes/Document'));
+app.use('/AppointmentClient', userValidate, require('./Routes/AppointmentClient'));
+
 app.use('/renewlsClient', userValidate, require('./Routes/renewlsClient'));
 app.use('/renewedClients', userValidate, require('./Routes/renewedClients'));
 app.use('/activeClients', userValidate, require('./Routes/activeClients'));

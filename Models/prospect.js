@@ -12,6 +12,8 @@ let prospect = new mongoose.Schema({
     FollowupDate: Date,
     NextFollowupDate: Date,
     TimeFollowp: String,
+    AppointmentDate: Date,
+    AppointmentTime: String,
     Discussion: String,
     Counseller: String,
     enquiryStage: String,
