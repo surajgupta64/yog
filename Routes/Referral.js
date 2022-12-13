@@ -1,11 +1,11 @@
-const express = require('express')
+const express = require('express');
+const Referral = require('../Models/Referral');
 const router = express.Router()
 //modelName
-const Referrals = require('../Models/Referrals')
 
 router.get('/all', async function (req, res) {
     try {
-        const response = await Referrals.find()
+        const response = await Referral.find()
         return res.status(200).json(response);
     } catch (err) {
         return res.status(500).json({ error: err })
