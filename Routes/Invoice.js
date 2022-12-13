@@ -42,6 +42,15 @@ router.get('/:id', async function (req, res) {
     }
 })
 
+router.get('/invoiceGet/:memberId', async function (req, res) {
+    try {
+        const response = await Invoice.findOne({ MemberId: req.params.memberId })
+        return res.status(200).json(response);
+    } catch (err) {
+        return res.status(500).json({ error: err })
+    }
+})
+
 router.delete('/delete/:id', async (req, res) => {
     try {
         const response = await Invoice.findByIdAndDelete(req.params.id);

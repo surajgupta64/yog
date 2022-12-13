@@ -5,4 +5,4 @@ let Referral = new mongoose.Schema({
     Documenttype: String,
     UploadDocument: String,
 }, { timestamps: true })
-module.exports = mongoose.model('Referrals', Referral);
+module.exports = mongoose.model('Referral', Referral);
