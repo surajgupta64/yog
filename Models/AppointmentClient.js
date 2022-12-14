@@ -1,6 +1,8 @@
 let mongoose = require('mongoose')
 let AppointmentClient = new mongoose.Schema({
     userId: String,
+    ClientName:String,
+    ClientNumber:Number,
     AppointmentId: String,
     AppointmentDate: Date,
     AppointmentTime: String,
