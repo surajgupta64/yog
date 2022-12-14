@@ -29,6 +29,7 @@ app.use('/login', require('./Routes/login'));
 app.use('/Referral', userValidate, require('./Routes/Referral'));
 app.use('/Document', userValidate, require('./Routes/Document'));
 app.use('/fitnessDetail', userValidate, require('./Routes/fitnessDetails'));
+app.use('/dietDetail', userValidate, require('./Routes/DietDetails'));
 app.use('/AppointmentClient', userValidate, require('./Routes/AppointmentClient'));
 app.use('/renewlsClient', userValidate, require('./Routes/renewlsClient'));
 app.use('/renewedClients', userValidate, require('./Routes/renewedClients'));
