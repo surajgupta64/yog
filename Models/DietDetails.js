@@ -3,6 +3,7 @@ let mongoose = require('mongoose')
 let DietDetails = new mongoose.Schema({
     username: String,
     DietStartDate: Date,
+    diet_Id:String,
     Member_ID: String,
     Fullname: String,
     ContactNumber: Number,
