@@ -4,6 +4,7 @@ let mongoose = require('mongoose')
 let clientAttentance = new mongoose.Schema({
     username: String,
     attentanceId: String,
+    clientId:String,
     ClientName: String,
     ClientMobile: Number,
     ServiceName: String,
